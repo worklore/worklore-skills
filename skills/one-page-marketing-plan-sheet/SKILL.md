@@ -19,38 +19,42 @@ The grid — three phases of the customer journey, three squares each:
 
 ## Instructions
 
-Start from a draft, not a blank page — filling nine empty boxes cold is the
-barrier that kills most marketing plans.
+Start from a draft, not a blank page — but get the foundation right first. A plan
+built on the wrong assumption is worse than none.
 
-1. **Gather context first.** Learn what you can about the business before asking:
-   read the project's README, site, or the product description available in the
-   session. If little is known, ask 2–3 quick framing questions (what the product
-   is, roughly who it's for, the main goal right now). Don't interrogate.
-2. **Draft all nine squares from that context.** Produce a complete first-pass
-   3x3 — a concrete proposed answer in every square — and show it, clearly
-   labeled as a *starting draft the user will edit*.
-3. **Refine square by square with the user.** Go through the nine in order; the
-   user corrects and owns each. Push back on vague answers — niche the target
-   ("everyone" is not a market), make the message specific, name real channels.
-   Use these as the checklist for what each square must answer:
-   - **1. Target market** — Who exactly is this for? Niche down. Demographics,
-     situation, the specific pain. ("everyone" is not an answer.)
-   - **2. Message** — What do you say to that market? The offer, the promise,
-     what makes you different, the emotional hook.
-   - **3. Media** — Where will you reach them? The specific channels the target
-     market actually uses (not where it's easy for you to post).
-   - **4. Capture leads** — How do you collect contact details? Lead magnet,
-     landing page, the CRM/list where they land.
-   - **5. Nurture leads** — How do you build trust over time before the sale?
-     Email sequence, content, cadence.
-   - **6. Sales conversion** — How does a nurtured lead become a paying
-     customer? The offer, pricing, the mechanism that reduces risk.
-   - **7. World-class experience** — How do you deliver so well they become
-     fans? Onboarding, the "wow" moments, what you'll systematize.
-   - **8. Lifetime value** — How do you increase what each customer is worth?
-     Upsells, ascension, retention, raising prices, reactivation.
-   - **9. Referrals** — How do you deliberately stimulate word of mouth? The
-     ask, the incentive, making it easy to refer.
+1. **Set the assumptions with the user — don't guess these.** State your best read
+   from context, then ask them to confirm or correct:
+   - **The item** — what exactly is being marketed? One or two sentences.
+   - **The sale** — what counts as a "conversion" here? Name it explicitly: a
+     purchase, a subscription, a signup, a booked call, a contribution? What does
+     the business actually want people to *do* or *buy*? If there's a longer-term
+     **business model** (e.g. "free now, sell to companies later"), write it down —
+     it reshapes squares 4–9. Don't move on until the user agrees what "the sale"
+     is; everything downstream depends on it.
+2. **Draft all nine squares from that context** — a concrete proposed answer in
+   every square — and show it as a starting draft the user will edit.
+3. **Refine square by square with the user.** For each square, give a one-line
+   plain-language explanation first (assume they are *not* a marketer), then your
+   proposed answer, then let them correct. Push back on vagueness.
+   - **1. Target market** — *who, exactly, this is for.* Niche down: the specific
+     person, their situation, the pain. ("everyone" is not an answer.)
+   - **2. Message** — *what you say to that market.* The offer, the promise, what
+     makes you different, the hook that makes them care.
+   - **3. Media** — *where you'll reach them* — the specific channels/platforms the
+     target actually uses (not where it's easy for you to post).
+   - **4. Capture leads** — *how you get a way to contact interested people.* A
+     "lead" is someone who showed interest and gave you a way to reach them (a
+     follow, a signup, a star, an email). Name the mechanism and where they land.
+   - **5. Nurture leads** — *how you build trust over time before asking for the
+     sale.* The ongoing content/contact, and its cadence.
+   - **6. Sales conversion** — *how an interested lead becomes the "sale" you
+     defined in step 1.* The offer, the pricing/ask, and what reduces their risk.
+   - **7. World-class experience** — *how you deliver so well they become fans.*
+     Onboarding, the "wow" moments, what you'll systematize.
+   - **8. Lifetime value** — *how you grow what each customer is worth over time.*
+     Upsells, retention, higher tiers, reactivation.
+   - **9. Referrals** — *how you deliberately get customers to bring others.* The
+     ask, the incentive, and making it easy to refer.
 
 4. **Build the Google Sheet.** Create a new spreadsheet titled
    `1-Page Marketing Plan — <business or product>`, using whatever Google Sheets
