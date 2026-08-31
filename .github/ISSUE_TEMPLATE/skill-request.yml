@@ -1,0 +1,31 @@
+name: Skill request
+description: Propose a skill to add (or claim one to write)
+title: "Skill: <verb + object, e.g. generate a changelog from commits>"
+labels: ["skill-request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Proposed skill name
+      description: lowercase, hyphens (e.g. changelog-from-commits)
+      placeholder: changelog-from-commits
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What should it do, and when should an agent use it?
+      description: This becomes the SKILL.md description.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Tools/keys it needs, edge cases, links.
+  - type: checkboxes
+    id: claim
+    attributes:
+      label: Claim
+      options:
+        - label: I'd like to write this one myself.

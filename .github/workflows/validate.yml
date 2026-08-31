@@ -1,0 +1,43 @@
+name: Validate skills
+
+on:
+  pull_request:
+    paths:
+      - 'skills/**'
+      - 'template/**'
+      - '.github/scripts/**'
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Enforce one skill per PR
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          CHANGED=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" -- skills/ \
+            | grep -oE '^skills/[^/]+/' | sort -u || true)
+          COUNT=$(printf "%s" "$CHANGED" | grep -c . || true)
+          echo "Changed skill folders: ${CHANGED:-none} (count=$COUNT)"
+          if [ "$COUNT" -gt 1 ]; then
+            echo "::error::One skill per PR — this PR changes $COUNT skill folders."
+            exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pyyaml
+
+      - name: Validate SKILL.md format
+        run: python .github/scripts/validate_skill.py
