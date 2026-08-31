@@ -64,13 +64,23 @@ built on the wrong assumption is worse than none.
    - the Google Sheets API via a client library such as `gspread` (Python), or
    - the `google-apps-script`/Sheets REST API you're configured for.
 
-   Lay it out to mirror the grid: a title row, a header row
-   `Phase | Square 1 | Square 2 | Square 3`, then three phase rows
-   (Before / During / After). In each cell put the **square's name in bold**
-   followed by the user's answer. Format it: bold the header row and phase
-   column, tint each phase a different soft color, enable text wrapping, widen
-   the columns, and freeze the header row. Add the guiding question as a light
-   cell note where a square was skipped.
+   Layout that reads well (learned the hard way — a narrow label column squashes
+   long text into unreadable skinny towers, so avoid it):
+   - Use **three equal wide columns** (~390px each), one per square. Do NOT put
+     the phase in a narrow column A.
+   - Rows, top to bottom: a **title** row; two full-width lines for the
+     assumptions (the item + "the sale"); a blank row; then, for **each phase**,
+     a full-width colored **band row** (BEFORE / DURING / AFTER) followed by
+     **one row holding that phase's three squares**.
+   - In each square cell put the **square's name in bold**, then the answer. Set
+     the three square rows to **WRAP** + **TOP** vertical align + a **tall fixed
+     row height (~180px)** so the text is comfortable.
+   - Tint each band a distinct soft color; give its square row a lighter tint of
+     the same hue. Freeze the top title/assumptions rows.
+   - **Merging:** if your tool can merge cells, merge each band (and the title)
+     across all three columns. Many Sheets tools/APIs have **no merge action** —
+     then use a full-width background band instead (it looks the same), and let
+     long top text OVERFLOW across the empty cells rather than wrap in one column.
 
 5. **Fallback when you have no Google Sheets access:** produce the exact same 3x3
    as a CSV (or a Markdown table) and give the user the import steps —
