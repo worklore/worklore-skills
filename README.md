@@ -44,11 +44,11 @@ a skill lands a real result for you, publish a short, reproducible story at
 [worklore.dev](https://worklore.dev) — narrative + a "Reproduce this" contract other
 people's agents can run.
 
-## Hacktoberfest
+## Contributing
 
-This repo takes part in **Hacktoberfest**. Look for [`good first issue`](../../labels/good%20first%20issue)
-— each is one specific skill to write. Quality is enforced by CI; low-effort or spam
-PRs are labeled `spam`/`invalid`. One skill per PR, please.
+Look for [`good first issue`](../../labels/good%20first%20issue) — each is one specific
+skill to write. Quality is enforced by CI; low-effort or spam PRs are labeled
+`spam`/`invalid`. One skill per PR, please. Details in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

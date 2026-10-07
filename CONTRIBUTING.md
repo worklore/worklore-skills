@@ -1,7 +1,7 @@
 # Contributing a skill
 
-Thanks for adding to the library! Contributions are welcome year-round, and
-especially during Hacktoberfest. The rules below keep quality high and let a small
+Thanks for adding to the library! Contributions are welcome year-round. The rules
+below keep quality high and let a small
 team review quickly — most are checked automatically by CI, so following them means
 your PR is accepted fast.
 
